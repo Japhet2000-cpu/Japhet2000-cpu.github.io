@@ -4,27 +4,12 @@
 <title> jet</title>
 <style type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-.light{display: table;
-       position:fixed;
-       left:-100%;
-       top:0;
-       width: 20%;
-       heigth: 20%;
-       background:grey;
-       transition-duration: 2s;}
-       .light:target{left:0;
+html,body{margin-top: 1px;
+padding-top: 1px;}
+.div{font-size:25px;
     }
-    .light-content{ display: table-cell;
-                    vertical-align:left;
-                     text-align:center;}
-     .close{position:absolute;
-     right:5px;
-     text-decoration: none;
-     color: green;
-  }
-.div{font-size:25px;}
      input{ border:none;
-border-bottom: 5px solid green;}
+border-bottom: 2px solid green;}
 textarea{background: yellowgreen;
          color: white;
          border: none;
@@ -42,7 +27,7 @@ font-family: cursive;
           font-family: cursive , arial;}
 input{background: yellowgreen;
       color: white;
-      border-radius: 10px;}
+      border-radius: 5px;}
 #div2{background: orange;
        
       width:100%;
@@ -54,11 +39,8 @@ input{background: yellowgreen;
        padding: 10px;}
 input{
 transition-property: width , height ,background; 
-transition-duration: 4s;}
-input:hover{ width: 400px;
-              height: 30px;
-              background: blue;
-              size: 20px}
+transition-duration: 1s;}
+
 body{background-image:url("images/fore.jpg");
      background-attachment: fixed;
      background-size: cover;
@@ -67,9 +49,10 @@ footer { color: whitesmoke;
          background: black;
          position:relative;
          background-attachment: fixed;
-         
+         height: 278px;
          font-size: 20px;
-         opacity:1;}
+         opacity:0.9;
+         margin-top: 200px;}
     #footer-copy{ color: white;
                   background:green;
                   width: 100%;
@@ -83,93 +66,107 @@ display:block;
 .footer-body b > a{ color: white;
                   text-decoration: none;
                   margin-bottom: 4px;}
-#font2{font-family: calibri;
-       font-size: 20px;
-       color: white;}
-select{ background: chocolate;
-        color: white;
-        width: 10%;
-        border-radius: 4px;}
- select:hover{ color: blue;}
- select{ font-family: cursive;
-          font-size:18px;}
+#font2{font-family: arial;
+       font-size: 15px;
+       color: black;
+       font-style: justify;}
+
+          .dd {position: relative;
+          	display: inline-block;}
+          	.dd-btn {padding: 15px;
+          	     text-align: center;
+          	     border-radius: 10px;
+                 background: yellowgreen;
+          	    width: 100px;
+                 box-shadow: 0 13px 12px whitesmoke;
+          	   }
+          	   .dd-content{position: absolute;
+                border-radius: 10px;
+          	    width: 100px;
+          	    height: 0px;
+          	    box-shadow: 0 15px 23px rgb(0,0,0,0.30),0 14px 11px rgb(0,0,0,0.34);
+          	   transition: 1s;
+               color: white;
+          	   overflow: hidden;}
+          	   .dd:hover > .dd-content {height: 100px;
+          	     opacity: 1;
+                 background: yellowgreen;
+                 }
+          	   .dd-content > a {display: block;
+          	      padding: 2px;
+          	      text-decoration: none; 
+          	   color: white;}
+          	   .nav-bar{position: fixed;
+          	       top: 0px;
+          	      left: 0px;
+          	     width: 100%;}
+          	     .content{margin-top: 50px;
+          	     }
+          	     .content > div {padding: 15px;}
+          	     .nav-bar a { text-decoration: none;
+          	     display: block;
+          	     height: 50px;
+          	     line-height: 50px; }
+span{width: 20px;
+    margin-top: 10px;
+  height: 10px;
+  padding: 15px;
+   background: orange;
+   border-radius: 50%;}
+   span{box-shadow: 0 13px 10px chocolate, 0 10px 12px orange;}
+   .span-container{font-family: arial;}
+   button{border-radius: 10px;
+     border:none;
+opacity: 1;
+    background:  skyblue;
+    color: white;
+    padding: 10px;}
+    a:link {text-decoration: none;}
+
 </style>
 </head>
 <body>
+  
+<div class="nav-bar">
+	<div class="dd">
+		<button class="dd-btn">MENU</button>
+		<div class="dd-content">
+<a href="home.html">HOME</a>
+<a href="sign.html">SIGN UP</a>
+</div>
+</div>
+</div>
 <div class="div">
 <center>
 <div id="div2">
-<a href="account.html">HOME</a>&nbsp
-
 </div>
 <I>
-<H2>WEB DESIGN</H2>
+  <div class="nav-bar">
+    <div class="span-container">
+<B><span>J</span> PUBLISHERS</B>
+</div>
+</div>
 <BR>
 </I>
-<div class="font">
-<B>here we will be sharing some of the new contents
-of how to use htlm </B></BR>
-
-<B>here we will be sharing some of the new contents
-of how to use htlm </B>
-
-<B></BR>
-<U>HERE WE GO</U>
-</B>
-
-<LI> TERM1</LI>
-<LI>TERM2</LI>
-<LI>TERM3</LI>
-
-
-<FORM>
-<div id="div3">
-<b>username:<input type="text" placeholder="username" name="n1"></b><br>
-<br>
-<b>password<input type="password" placeholder="password"name="password"></b></br>
-<p> Gender:</p>
-<input type="radio" id="Male" name="Gender" value="Male">
- <label for="Male">Male</label><br>
-<input type="radio" id="Female" name="Gender" value="Female">
-<label for="Female">Female</label><br>
-<p> choose</p>
-<input type="checkbox">Better</br>
-<input type="checkbox">Best</br>
-<input type="checkbox">None</br>
-<p>choose your country</p>  
-<label for ="brouser"</label>
-<input list="eacs" name="eac" id="eac"/>
-</div>
-<datalist id="eacs">
-    <option value="Rwanda">
-    <option value="Tanzania">
-    <option value="Burundi">
-    <option value="kenya">
-    <option value="south sudan">
-    <option value="Tanzania">
-</datalist></br>
-<input type="submit">
-<div id="font">
-<a href="hole.html">click here</a>
-</div>
-<textarea id="w3review" name="w3review" rows="4" cols="50">
-</textarea>	
-<table>
-<tr><td>ocean name</td><td>average depth</td></tr>
-<tr><td>pacific ocean</td><td>4700m</td></tr>
-</tr>
-</table>
-</center>
-</div>
-</div>
-<center>
-<select value="dropdown">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
 <div id="font2">
-<option>math</option>
-<option>phy</option>
+  <center>You can make it famous you just need to get it here.</center>
+  Sign your to your account and start make it popular
+  <br>
+  <center>Sign in to your account:</center>
+  <br><br>
+  <center><input type="text" name="username" placeholder="username"><br>
+    <br>
+    <input type="password" name="password" placeholder="password">
+<br>
+<BR>
+<button><a href="home.html">SIGN</a></button>
+  </center>
 </div>
-</center>
-</select><br>
 <footer>
 <center>
 <div id="font2">
@@ -186,7 +183,7 @@ of how to use htlm </B>
 <br>
 <b><a href="http://www.google.com">Google</a></b>
 </div>
-</center>
+
 <br>
 <br>
 <div id="footer-copy">

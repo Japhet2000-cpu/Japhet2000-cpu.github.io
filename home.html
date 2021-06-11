@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> jet</title>
+<style type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+html,body{margin-top: 1px;
+padding-top: 1px;}
+.dd {position: relative;
+          	display: inline-block;}
+          	.dd-btn {padding: 15px;
+          	     text-align: center;
+          	     border-radius: 10px;
+                 background: yellowgreen;
+          	    width: 100px;
+                 box-shadow: 0 13px 12px whitesmoke;
+          	   }
+          	   .dd-content{position: absolute;
+                border-radius: 10px;
+          	    width: 100px;
+          	    height: 0px;
+          	    box-shadow: 0 15px 23px rgb(0,0,0,0.30),0 14px 11px rgb(0,0,0,0.34);
+          	   transition: 1s;
+               color: white;
+          	   overflow: hidden;}
+          	   .dd:hover > .dd-content {height: 100px;
+          	     opacity: 1;
+                 background: yellowgreen;
+                 }
+          	   .dd-content > a {display: block;
+          	      padding: 2px;
+          	      text-decoration: none; 
+          	   color: white;}
+          	   .nav-bar{position: fixed;
+          	       top: 0px;
+          	      left: 0px;
+          	     width: 100%;}
+          	     .content{margin-top: 50px;
+          	     }
+          	     .content > div {padding: 15px;}
+          	     .nav-bar a { text-decoration: none;
+          	     display: block;
+          	     height: 50px;
+          	     line-height: 50px; }
+          	     tr{width: 400px;}
+          	     img{width: 200px;
+          	     	height: 300px;}
+</style>
+</head>
+<body bgcolor="grey">
+	
+<div class="nav-bar">
+	<div class="dd">
+		<button class="dd-btn">MENU</button>
+		<div class="dd-content">
+<a href="home.html">HOME</a>
+</div>
+</div>
+</div>
+<table>
+	<tr>
+
+<img src="images/blue.jpg" alt="blue"><br>
+<img src="images/bluewhite.jpg" alt="bluewhite"><br><br>
+<img src="images/comp.jpg" alt="comp"><br>
+<img src="images/red.jpg" alt="red"><br>
+<img src="images/lap.jpg" alt="lap"><br>
+<img src="images/t.jpg" alt="t">
+</tr>
+</table>
+</body>
+</html>
